@@ -138,7 +138,8 @@ p {
   color: #ccc;
 }
 
-.select-row select {
+.select-row select,
+.selectors select {
   padding: 0.6rem 1rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -147,11 +148,12 @@ p {
   color: #f0f0f0;
 }
 
-/* Skjuler gammel global select-styling hvis du bruker .select-row */
-select,
-#sortSelect {
-  all: unset;
+/* Valgfritt: juster dropdown-listens stil (hvis mulig i nettleseren) */
+.select-row select option {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
 }
+
 
 
 /* ===== GRID LAYOUT ===== */
