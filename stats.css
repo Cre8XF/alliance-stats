@@ -1,95 +1,87 @@
 /* ===== TEMA-STILER ===== */
-/* Grønn */
-body.theme-green {
-  background: linear-gradient(to bottom right, #1a1a1a, #2c2c2c);
-  color: #f0f0f0;
+body.theme-rough {
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+  color: #ccc;
 }
 
-.theme-green h1 {
-  color: #4caf50;
+.theme-rough h1 {
+  color: #ff3c00;
 }
 
-.theme-green .flip-card-front {
-  background-color: #262c33;
+.theme-rough .flip-card-front {
+  background-color: #1e1e1e;
 }
 
-.theme-green .flip-card-back {
-  background-color: #333a42;
+.theme-rough .flip-card-back {
+  background-color: #292929;
 }
 
-.theme-green details.section {
-  background-color: #404b56;
+.theme-rough details.section {
+  background-color: #333;
 }
 
-.theme-green details.section summary {
-  color: #90caf9;
+.theme-rough details.section summary {
+  color: #ff9100;
 }
 
-/* Glød ved hover – grønn plasma */
-.theme-green .flip-card::before {
-  background: linear-gradient(45deg, #00ff88, #00ffaa, #33ff55, #00ff88);
+.theme-rough .flip-card::before {
+  background: linear-gradient(45deg, #ff0000, #ff9100, #ff3c00, #ff0000);
+}
+body.theme-elegant {
+  background: linear-gradient(to bottom right, #2b2b2b, #1f1f1f);
+  color: #f3f3f3;
 }
 
-/* Blå */
-body.theme-blue {
-  background: linear-gradient(to bottom right, #1e2a38, #2b3e50);
-  color: #e0f0ff;
+.theme-elegant h1 {
+  color: #d4af37; /* gull */
 }
 
-.theme-blue h1 {
-  color: #2196f3;
+.theme-elegant .flip-card-front {
+  background-color: #2a2a2a;
 }
 
-.theme-blue .flip-card-front {
-  background-color: #2c3e50;
+.theme-elegant .flip-card-back {
+  background-color: #383838;
 }
 
-.theme-blue .flip-card-back {
-  background-color: #34495e;
+.theme-elegant details.section {
+  background-color: #444;
 }
 
-.theme-blue details.section {
-  background-color: #3c5a72;
+.theme-elegant details.section summary {
+  color: #e0c97d;
 }
 
-.theme-blue details.section summary {
-  color: #64b5f6;
+.theme-elegant .flip-card::before {
+  background: linear-gradient(45deg, #c5a100, #fff3b0, #d4af37, #c5a100);
+}
+body.theme-fancy {
+  background: linear-gradient(to bottom right, #1e0033, #3d0066);
+  color: #ffffff;
 }
 
-/* Glød ved hover – blå plasma */
-.theme-blue .flip-card::before {
-  background: linear-gradient(45deg, #00ccff, #3388ff, #33ffff, #00ccff);
+.theme-fancy h1 {
+  color: #ff66cc;
 }
 
-/* Lilla */
-body.theme-purple {
-  background: linear-gradient(to bottom right, #2c1e3a, #3d2f50);
-  color: #f5eaff;
+.theme-fancy .flip-card-front {
+  background-color: #4d0073;
 }
 
-.theme-purple h1 {
-  color: #ab47bc;
+.theme-fancy .flip-card-back {
+  background-color: #660099;
 }
 
-.theme-purple .flip-card-front {
-  background-color: #4a3a5f;
+.theme-fancy details.section {
+  background-color: #7f00b2;
 }
 
-.theme-purple .flip-card-back {
-  background-color: #5c4b75;
+.theme-fancy details.section summary {
+  color: #ffd1f3;
 }
 
-.theme-purple details.section {
-  background-color: #6e5e89;
-}
-
-.theme-purple details.section summary {
-  color: #d1a3ff;
-}
-
-/* Glød ved hover – lilla plasma */
-.theme-purple .flip-card::before {
-  background: linear-gradient(45deg, #cc33ff, #9933ff, #ff33ff, #cc33ff);
+.theme-fancy .flip-card::before {
+  background: linear-gradient(45deg, #ff00ff, #66ffff, #ff66cc, #ff00ff);
 }
 
 /* ===== GLOBALT ===== */
