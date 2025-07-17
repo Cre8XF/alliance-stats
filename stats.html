@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alliance Stats</title>
+  <link rel="stylesheet" href="stats.css">
+</head>
+
+<body class="theme-green">
+  <header>
+    <h1>Alliance Member Stats</h1>
+    <p>View and compare stats of alliance members.</p>
+  </header>
+
+  <div class="container">
+
+    <div class="selectors">
+      <label for="monthSelect">Choose month:</label>
+      <select id="monthSelect">
+        <option value="JAN 2025">JAN 2025</option>
+        <option value="FEB 2025">FEB 2025</option>
+        <option value="MAR 2025">MAR 2025</option>
+        <option value="APR 2025">APR 2025</option>
+        <option value="MAY 2025" selected>MAY 2025</option>
+      </select>
+
+      <label for="themeSelect">Velg tema:</label>
+      <select id="themeSelect">
+        <option value="theme-green" selected>Grønn</option>
+        <option value="theme-blue">Blå</option>
+        <option value="theme-purple">Lilla</option>
+      </select>
+
+      <label for="sortSelect">Sort by:</label>
+      <select id="sortSelect">
+        <option value="none">None</option>
+        <option value="might">Might</option>
+        <option value="kill_points">Kill Points</option>
+        <option value="gw_points">GW Points</option>
+        <option value="ir_points">IR Points</option>
+        <option value="ar_faction_points">AR Faction Points</option>
+        <option value="district_showdown_points">District Points</option>
+      </select>
+    </div>
+
+    <div id="player-grid" class="grid"></div>
+  </div>
+
+  <script src="stats.js"></script>
+  <script>
+    document.getElementById("themeSelect").addEventListener("change", function (e) {
+      document.body.className = e.target.value;
+    });
+  </script>
+</body>
+
+</html>
