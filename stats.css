@@ -97,33 +97,62 @@ body {
   padding: 1rem;
 }
 
-/* ===== OVERSKRIFT & SELECT-MENYER ===== */
+/* ===== OVERSKRIFT ===== */
 h1 {
   text-align: center;
-  font-size: 2rem;
-  letter-spacing: 1px;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.5rem;
 }
+
 p {
   text-align: center;
-  font-size: 1.2rem;
-  color: #888;
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 2rem;
 }
-select,
-#sortSelect {
-  display: block;
-  margin: 1rem auto;
-  padding: 0.5rem 1rem;
+
+/* ===== SELECT-MENYER ===== */
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 360px;
+  margin: 0 auto 3rem auto;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid #444;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.select-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-row label {
+  margin-bottom: 0.4rem;
   font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #333;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.select-row select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #555;
   background-color: #1e1e1e;
   color: #f0f0f0;
 }
 
-.sort-wrapper {
-  text-align: center;
-  margin: 1rem auto;
+/* Skjuler gammel global select-styling hvis du bruker .select-row */
+select,
+#sortSelect {
+  all: unset;
 }
+
 
 /* ===== GRID LAYOUT ===== */
 .grid {
