@@ -184,7 +184,7 @@ select,
   width: 100%;
   min-height: 350px;
   transform-style: preserve-3d;
-  transition: transform 0.8s ease;
+  transition: transform 1s ease;
 }
 
 .flip-card:hover .flip-card-inner {
